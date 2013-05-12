@@ -1,0 +1,93 @@
+html, body {
+	height: 100%;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+input {
+  height:14px !important;
+  margin: 3px 0px !important;
+}
+
+/* Enable bootstrap with OpenLayers */
+img { max-width: none; }
+
+/* Overwriting the actual nav-header style for the detail view
+ * to create some kind of sub-header
+ */
+.sub {
+  margin-top: 0px !important;
+  margin-left: 10px !important;
+}
+
+.sub-text {
+  margin-left: 40px !important;
+}
+
+/* Things for the date view of the details */
+#showolderdates, #shownewerdates {
+  padding-left: 13px;
+}
+
+.label {
+  width:240px;
+  height: 30px;
+  margin: 5px;
+}
+
+.label button {
+  margin: 2px;
+}
+
+.datetext {
+  margin-top: 7px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+/* static footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+}
+
+#openflatlist, #opendetails {
+  display: none;
+}
+
+#showolderdates, #shownewerdates, #openflatlist, #opendetails {
+  cursor: pointer;
+}
+
+#footer {
+	padding-top: 20px;
+	padding-left: 30px;
+	height: 40px;
+	background-color: #c5c5c5;
+}
+
+.activateOnDetail {
+	display: none;
+}
+
+@media (max-width: 980px) {
+	/* Enable use of floated navbar text */
+	.navbar-text.pull-right {
+		float: none;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+@media (max-width: 767px) {
+	#footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
