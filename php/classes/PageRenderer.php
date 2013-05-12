@@ -52,7 +52,7 @@
 		
 		// Function to add Bootstrap modals to the page
 		public function addModalToContent($modalid, $modalname, $modalcontent, $modalbuttons) {
-			$this->modalString .= '<div id="'.$modalname.'" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+			$this->modalString .= '<div id="'.$modalid.'" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">'.$modalname.'</h3>
@@ -151,7 +151,7 @@
 		<div id="footer">
 			<p class="pull-right" style="padding-right:60px">&copy; Ren&eacute; Martin 2013</p>
 		</div>';
-			$result .= $this->endString;
+			$result .= $this->modalString.$this->endString;
 			foreach ($this->requiredExternElements as $element) {
 				if (gettype($element)=='array' && $element[0] == ExternRequireTypes::$TYPE_JS) {
 					$result.=$this->_createJSLink($element[1]);
