@@ -47,9 +47,11 @@ Ausgabe:
 
 * dow=String  // gibt an, welche worksheets betrachtet werden sollen; mögliche Eingaben:
 
-** String=""  // Alle worksheets werden gelesen
-** String="od6". // Nur das worksheet mit dem Namen "od6" wird gelesen
-** String="od6+od7"  // Nur die worksheets mit den Namen "od6" und "od7" werden gelesen
+* * String=""  // Alle worksheets werden gelesen
+
+* * String="od6". // Nur das worksheet mit dem Namen "od6" wird gelesen
+
+* * String="od6+od7"  // Nur die worksheets mit den Namen "od6" und "od7" werden gelesen
 
 * city=String  // Setzt Filter für Stadt/PLZ; alle worksheets die diesem nicht entsprechen werden mit fitsfilter="0" geliefert
 
