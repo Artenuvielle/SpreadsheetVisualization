@@ -32,18 +32,32 @@ Der Webdienst besteht aus 2 Schnittstellen, welche mit dem Google Spreadsheet ar
 Ließt Daten aus einem Google Spreadsheet und gibt diese formatiert zurück.
 
 Ausgabe:
+
 {
+
   obj[] {
+
     worksheetname > {
+
       name > Name des Objekts
+
       adress > Straße, Postleitzahl und Stadt des Objekts (wird nur gesendet, falls Details angefordert werden)
+
       position > Koordinaten des Objekts für die Karte
+
       fitsfilter > gibt an, ob das Objekt dem gesetzten Filter entspricht (richtige Stadt/PLZ und enthält freie Tage)
+
       dates > Array von Tagen im angeforderten Bereich und ihr Belegungsstatus (wird nur gesendet, falls Details angefordert werden)
+
     }
+
   }
+
   cardzoom > Array mit Begrenzungen, welche die Karte anzeigen soll
+
 }
+
+Parameter:
 
 * dow=String  // gibt an, welche worksheets betrachtet werden sollen; mögliche Eingaben:
 
@@ -66,9 +80,14 @@ Ausgabe:
 Verändert Wert einer Spreadsheetzelle, in deren Reihe ein gewisses Datum gefunden wurde.
 
 Ausgabe:
+
 {
+
   result > "success" bei Erfolg, ansonsten Fehlercode (Erklärung siehe Quelltext)
+
 }
+
+Parameter:
 
 * dow=String  // gibt an, welches worksheets bearbeitet werden sollen; nur ein Name erlaubt
 
